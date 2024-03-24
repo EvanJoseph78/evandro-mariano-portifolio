@@ -13,7 +13,7 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 })
 export class HeaderComponent {
 
-  slideBar: boolean = false;
+  slideBar: boolean = true;
 
   constructor(public darkModeService: DarkmodeService) { }
 

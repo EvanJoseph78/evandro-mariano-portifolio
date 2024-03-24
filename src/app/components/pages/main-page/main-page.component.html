@@ -1,8 +1,13 @@
 <app-header></app-header>
 
-<div [ngClass]="{'dark': darkModeService.darkMode$ | async}">
-  <div class="h-screen dark:bg-primary-color-900 dark:text-white">
+<div [ngClass]="{'dark': darkModeService.darkMode$ | async}" class="h-screen">
+
+  <div class="h-full dark:bg-primary-color-900 dark:text-white">
     evan
   </div>
+
+  <footer class="bg-primary-color-950 h-36 w-screen">
+    footer
+  </footer>
 
 </div>

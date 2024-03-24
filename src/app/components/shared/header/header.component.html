@@ -1,10 +1,11 @@
-<header class="w-screen dark " [ngClass]="{'dark': darkModeService.darkMode$ | async}">
+<header class="w-full dark " [ngClass]="{'dark': darkModeService.darkMode$ | async}">
   <div
     class="text-primary-color-950 bg-primary-color-100 dark:bg-primary-color-950 h-16 px-2 sm:px-8 flex dark:text-white">
 
     <div class="h-full flex gap-4 items-center w-1/2 sm:w-1/3">
-      <button type="" class="sm:hidden flex justify-center">
-        <mat-icon class="hover:text-secondary-color-600">menu</mat-icon>
+      <!-- <button type="" class="sm:hidden flex justify-center"> -->
+      <button type="" class="flex justify-center">
+        <mat-icon class="hover:text-secondary-color-600" (click)="toggleSlideBar()">menu</mat-icon>
       </button>
       <button class="hover:text-secondary-color-600">Evandro Mariano</button>
     </div>
@@ -31,3 +32,9 @@
     </div>
   </div>
 </header>
+
+
+<!-- <app-side-bar class="sm:hidden flex justify-center z-10 absolute w-[200px] bg-primary-color-100 h-full"></app-side-bar> -->
+@if(slideBar){
+<app-side-bar class="flex justify-center z-10 absolute w-[300px] bg-primary-color-100 h-full"></app-side-bar>
+}

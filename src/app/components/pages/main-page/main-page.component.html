@@ -1,6 +1,8 @@
-<div [ngClass]="{'dark': darkMode}">
-  <div class="h-screen dark:bg-black dark:text-white">
+<app-header></app-header>
+
+<div [ngClass]="{'dark': darkModeService.darkMode$ | async}">
+  <div class="h-screen dark:bg-primary-color-900 dark:text-white">
     evan
-    <button type="" class="bg-primary-color-500 px-2" (click)="toggleDarkMode()">L</button>
   </div>
+
 </div>

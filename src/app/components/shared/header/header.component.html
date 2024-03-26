@@ -33,7 +33,9 @@
 
   </div>
 
-  <app-side-bar class="absolute" [ngClass]="{'right-16': sideBar else: 'right-0'}"></app-side-bar>
+  <!-- <app-side-bar class="absolute" [ngClass]="{'right-16': sideBar else: 'right-0'}"></app-side-bar> -->
+  <app-side-bar class="absolute transition-all duration-300 dark:text-white"
+    [ngClass]="sideBar ? '-ml-[300px]' : 'ml-0'"></app-side-bar>
 </div>
 
 <!-- @if(sideBar){ -->

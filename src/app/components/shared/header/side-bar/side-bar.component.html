@@ -1,4 +1,37 @@
-<div class="bg-secondary-color-500 h-screen w-96">
-  side bar
+<div class="bg-primary-color-100 dark:bg-primary-color-800 w-[300px] h-full flex flex-col gap-2 justify-between ">
+  <div class="flex flex-col gap-2 px-4 py-2 mt-16">
+    <button
+      class="flex gap-2 px-2 hover:px-8 hover:text-secondary-color-600 hover:bg-primary-color-200 transition-all duration-300 py-2 rounded dark:hover:bg-primary-color-950">
+      <mat-icon>home</mat-icon>
+      Home</button>
+    <button
+      class="flex gap-2 px-2 hover:px-8 hover:text-secondary-color-600 hover:bg-primary-color-200 transition-all duration-300 py-2 rounded dark:hover:bg-primary-color-950">
+      <mat-icon>mail</mat-icon>
+      Contact</button>
+    <button
+      class="flex gap-2 px-2 hover:px-8 hover:text-secondary-color-600 hover:bg-primary-color-200 transition-all duration-300 py-2 rounded dark:hover:bg-primary-color-950">
+      <mat-icon>code</mat-icon>
+      Projects</button>
+    <button
+      class="flex gap-2 px-2 hover:px-8 hover:text-secondary-color-600 hover:bg-primary-color-200 transition-all duration-300 py-2 rounded dark:hover:bg-primary-color-950">
+      <mat-icon>sports_esports</mat-icon> Games</button>
+    <button
+      class="flex gap-2 px-2 hover:px-8 hover:text-secondary-color-600 hover:bg-primary-color-200 transition-all duration-300 py-2 rounded dark:hover:bg-primary-color-950">
+      <mat-icon>info</mat-icon>
+      About</button>
+
+  </div>
+
+  <div class="flex justify-end mb-4 mr-4">
+    <button type="" class="flex justify-center items-center hover:text-secondary-color-600" (click)="toggleDarkMode()">
+
+      @if(darkModeService.darkMode$ | async){
+      <mat-icon>light_mode</mat-icon>
+      }@else{
+      <mat-icon>dark_mode</mat-icon>
+      }
+    </button>
+
+  </div>
 
 </div>

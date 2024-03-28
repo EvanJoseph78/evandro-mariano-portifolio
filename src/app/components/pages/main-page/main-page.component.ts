@@ -21,5 +21,13 @@ export class MainPageComponent implements OnInit {
   toggleDarkMode() {
     this.darkModeService.toggleDarkMode();
   }
+
+  toggleSideBar() {
+    // this.darkModeService.toggleDarkMode();
+    this.darkModeService.closeSideBar();
+    // this.darkModeService.toggleSideBar();
+  }
+
+
 }
 

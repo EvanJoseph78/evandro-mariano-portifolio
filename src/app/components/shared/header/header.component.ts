@@ -23,6 +23,7 @@ export class HeaderComponent {
 
   toggleSlideBar() {
     this.sideBar = !this.sideBar;
+    this.darkModeService.toggleSideBar();
   }
 
 }
